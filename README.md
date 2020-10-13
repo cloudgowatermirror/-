@@ -7,18 +7,24 @@ Windows 10利用SSH安全加密連線遠端登錄Ubuntu(Linux)，以下用Ubuntu
 如果是使用Ubuntu伺服器版則直接輸指令即可
 
 透過以下指令先確認ubuntu是否安裝了SSH，可以看到系統預設裝了openssh-client
+
 dpkg -l | grep ssh
+
 ![image](https://github.com/cloudgowatermirror/-/blob/master/01-1.jpg)
 
 
 再來，為了其他電腦連線到你的Ubuntu，必須透過以下指令安裝openssh-server
+
 sudo apt-get install openssh-server
 
 如果是為了讓Ubuntu連線至其他電腦，則透過以下指令安裝openssh-client(通常系統都預設安裝)
+
 sudo apt-get install openssh-client
 
 都裝好了之後在用指令確認一下，會發現多了一個openssh-server
+
 dpkg -l | grep ssh
+
 ![image](https://github.com/cloudgowatermirror/-/blob/master/03.jpg)
 
 
@@ -29,6 +35,7 @@ ps -e | grep ssh
 ![image](https://github.com/cloudgowatermirror/-/blob/master/04.jpg)
 
 如果發現沒有啟動則輸入以下指令啟動
+
 sudo /etc/init.d/ssh start
 或
 sudo service ssh start
