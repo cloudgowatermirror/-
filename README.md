@@ -23,6 +23,7 @@ dpkg -l | grep ssh
 
 
 再來透過以下指令確認openssh-server是否有啟動，如果看到sshd表示已經啟動
+
 ps -e | grep ssh
 
 ![image](https://github.com/cloudgowatermirror/-/blob/master/04.jpg)
