@@ -21,8 +21,10 @@ sudo apt-get install openssh-client
 dpkg -l | grep ssh
 ![image](https://github.com/cloudgowatermirror/-/blob/master/03.jpg)
 
+
 再來透過以下指令確認openssh-server是否有啟動，如果看到sshd表示已經啟動
 ps -e | grep ssh
+
 ![image](https://github.com/cloudgowatermirror/-/blob/master/04.jpg)
 
 如果發現沒有啟動則輸入以下指令啟動
