@@ -59,7 +59,7 @@ route add default gw 192.168.1.xxx
 或是到interfaces此設定檔修改，先用以下指令到根目錄 
 cd /
 
-在用以下指令用vim編輯器開啟interfaces修改設定
+再用以下指令用vim編輯器開啟interfaces修改設定
 sudo vim /etc/network/interfaces
 
 若找不到檔案則用下列方式一層層進入並用ls找看看檔案，確認有檔案在用sudo vim的指令
@@ -81,9 +81,17 @@ gateway 192.168.1.1
 設定完按 shift+: 然後輸入wq就會存檔並退出設定檔
 iface eth0 inet static #static表示使用固定ip，dhcp表示使用動態ip
 
-再來設定DNS，利用cd移到跟目錄在到設定檔的資料夾，然後找resolv.conf，如果
+再來到resolv.conf此設定檔修改，先用以下指令到根目錄 
 cd /
+
+再用以下指令用vim編輯器開啟resolv.conf修改設定
+sudo vim /etc/resolv.conf
+
+若找不到檔案則用下列方式一層層進入並用ls找看看檔案，確認有檔案在用sudo vim的指令
+cd /
+ls
 cd etc
+ls
 sudo vim resolv.conf
 
 進入後改成下面設定
