@@ -1,5 +1,6 @@
 # -
-Windows 10利用SSH安全加密連線遠端登錄Ubuntu(Linux)，以下用Ubuntu18.04做說明
+如何讓Windows 10遠端Linux
+利用SSH安全加密連線遠端登錄Linux，以下用Ubuntu 18.04 伺服器版做說明
 
 先到Ubuntu的系統
 
